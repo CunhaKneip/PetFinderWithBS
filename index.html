@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="./assets/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/MainStyle.css">
+    <title> Criação de conta - PetFinder</title>
+</head>
+<body>
+    <header class="container-fluid m-0 p-0">
+        <div class="row m-0 p-0">
+            <div class="col-12 cabecalho" style="overflow: hidden;">
+                <img src="./assets/petfinder-logo.svg" class="img-fluid p-2" alt="Logo PetFinder">
+            </div>
+        </div>
+    </header>
+    
+     <main>
+        
+        <div  class="container-xs m-4 bg-secondary-subtle border-secondary rounded-5 ">
+            <div class="crie_conta rounded-top-5 p-2 crie_conta_nao_desktop">
+                <p class="h3 ms-3 text-light "> Crie sua conta:</p>
+            </div>
+            <section class="">
+            <form id="formulario" class="needs-validation mt-md-1 section_form rounded-5" novalidate>
+
+                <div class=" crie_conta_desktop_div justify-content-center pt-5">
+                    <p class="container-md mw-5  py-2 px-5  w-50   border  crie_conta_desktop"  >Crie sua conta:</p>
+                </div>
+                
+                <div class=" p-3 d-md-flex flex-md-wrap  justify-content-evenly">
+                    <div class="form-floating mb-3 inputs">
+                        <input type="text" class="form-control validate-me" id="nome" name="nome"  placeholder="Ex: Mauricio" required data-input>
+                        <label for="nome">Nome:</label>
+                        <div class="valid-feedback">
+                            Nome válido :D
+                        </div>
+                        <div class="invalid-feedback">
+                            Insira um nome >:(
+                        </div>
+                    </div>
+                    
+
+                    <div class="form-floating mb-3 inputs">
+                        <input type="text" class="form-control validate-me" id="sobrenome" name="sobrenome" placeholder="Ex:De Souza" required data-input>
+                        <label for="sobrenome">Sobrenome:</label>
+                        <div class="valid-feedback">
+                            Sobrenome válido :D
+                        </div>
+                        <div class="invalid-feedback">
+                            Insira um sobrenome >:(
+                        </div>
+                    </div>
+
+                    <div class="form-floating mb-3 inputs ">
+                        <input type="text" class="form-control validate-me " id="nomeUsuario" name="usuario" placeholder="Ex: DonoDaLua98" required data-input>
+                        <label for="nomeUsuario">Nome de usuário:</label>
+                        <div class="valid-feedback">
+                            Usuário válido :D
+                        </div>
+                        <div class="invalid-feedback">
+                            Insira um usuário >:(
+                        </div>
+                    </div>
+
+
+                    <div class="row justify-content-start inputs m-0 p-0 ">
+                        <div class="col-auto m-0 pb-0">
+                            <p class="h6">Gênero:</p>
+                        </div>
+                        <div class="col-auto">
+                            <div class="col-sm-auto form-check form-check-inline">
+                                <input class="form-check-input validate-me " type="radio" name="genero" id="genero_masc" value="Masculino" required >
+                                <label class="form-check-label h6" for="genero_masc">Masculino</label>
+                            </div>
+                            <div class=" col-sm-auto form-check form-check-inline">
+                                <input class="form-check-input validate-me" type="radio" id="genero_fem" name="genero" value="Feminino" required>
+                                <label class="form-check-label" for="genero_fem">Feminino</label>
+                            </div>
+                            <div class="col-sm-auto form-check form-check-inline">
+                                <input class="form-check-input validate-me" type="radio" id="genero_outro" name="genero" value="Masculino" required>
+                                <label class="form-check-label" for="genero_outro">Outro</label>
+                                
+                            </div>
+                            <div class="col-sm-auto form-check form-check-inline">
+                                <input class="form-check-input d-none" type="radio" name="genero" id="genero_validacao" value="" required>
+
+                                <div class="col-sm-auto bg-secondary-subtle  valid-feedback">
+                                    Belo gênero :D
+                                </div>
+                                <div class=" col-sm-auto bg-secondary-subtle invalid-feedback">
+                                    Escolha um gênero...
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                    
+                    
+
+                <div class="form-floating mb-3 inputs">
+                    <input type="date" class="form-control validate-me" id="data" placeholder="Ex: 12/12/1212" required>
+                    <label for="data">Data de nascimento</label>
+                    <div class="col-sm-auto valid-feedback">
+                        Data valida :D
+                    </div>
+                    <div class=" col-sm-auto invalid-feedback">
+                        Data inválida >:(
+                    </div>
+                </div>
+                <div class="form-floating mb-3 inputs">
+                    <input type="text" class="form-control" id="cpf" placeholder="Ex: 12345678910" minlength="14" maxlength="14" required>
+                    <label for="cpf">CPF</label>
+                    <div class="col-sm-auto valid-feedback">
+                        CPF valido :D
+                    </div>
+                    <div class=" col-sm-auto invalid-feedback">
+                        CPF inválido >:(
+                    </div>
+                </div>
+                <div class="row align-items-center inputs  m-0 mb-3 d-flex justify-content-evenly ">
+                    <div class="col-8 col-sm-10 col-md-8 form-floating  ps-0">
+                        <input type="text" class="form-control validate-me" id="cep" placeholder="Ex: 96015560" minlength="8" maxlength="9" required>
+                        <label for="cep">CEP</label>
+                        <div class="col-sm-auto valid-feedback">
+                            CEP válido :D
+                        </div>
+                        <div class=" col-sm-auto invalid-feedback">
+                            CEP inválido >:(
+                        </div>
+                    </div>
+                    <select id="estado" class="col form-select form-select-lg pb-0 validate-me estado" aria-label="Default select example"  required>
+                        <option value="" disabled selected>UF</option>
+                        <option value="AC"disabled>AC</option>
+                        <option value="AL"disabled>AL</option>
+                        <option value="AP"disabled>AP</option>
+                        <option value="AM"disabled>AM</option>
+                        <option value="BA"disabled>BA</option>
+                        <option value="CE"disabled>CE</option>
+                        <option value="ES"disabled>ES</option>
+                        <option value="GO" disabled>GO</option>
+                        <option value="MA" disabled>MA</option>
+                        <option value="MT" disabled>MT</option>
+                        <option value="MS" disabled>MS</option>
+                        <option value="MG" disabled>MG</option>
+                        <option value="PA" disabled>PA</option>
+                        <option value="PB" disabled>PB</option>
+                        <option value="PR" disabled>PR</option>
+                        <option value="PE" disabled>PE</option>
+                        <option value="PI" disabled>PI</option>
+                        <option value="RJ" disabled>RJ</option>
+                        <option value="RN" disabled>RN</option>
+                        <option value="RS" disabled>RS</option>
+                        <option value="RO" disabled>RO</option>
+                        <option value="RR" disabled>RR</option>
+                        <option value="SC" disabled>SC</option>
+                        <option value="SP" disabled>SP</option>
+                        <option value="SE" disabled>SE</option>
+                        <option value="TO" disabled>TO</option>
+                      </select>
+                      
+                </div>
+                
+
+                <div class="form-floating mb-3 inputs">
+                    <input type="text" class="form-control validate-me" id="cidade" placeholder="Digite sua cidade" disabled required>
+                    <label for="cidade">Cidade</label>
+                </div>
+                <div class="form-floating mb-3 inputs">
+                    <input type="text" class="form-control validate-me" id="bairro" placeholder="Ex: Fragata" disabled required>
+                    <label for="bairro">Bairro</label>
+                </div>
+                <div class="form-floating mb-3 inputs">
+                    <input type="text" class="form-control validate-me" id="rua" placeholder="Ex: Praça 20 de Setembro" disabled required>
+                    <label for="rua">Rua</label>
+                </div>
+                <div class="form-floating mb-3 inputs">
+                    <input type="text" class="form-control validate-me" id="numero" placeholder="Ex: 231" required>
+                    <label for="numero">Numero</label>
+                    <div class="valid-feedback">
+                        Numero válido :D
+                    </div>
+                    <div class="invalid-feedback">
+                        Numero inválido >:(
+                    </div>
+                </div>
+                
+
+                <div class="form-floating mb-3 inputs">
+                    <input type="text" class="form-control validate-me" id="complemento" placeholder="Ex: Apartamento 502">
+                    <label for="complemento">Complemento</label>
+                </div>
+
+
+                <div class="form-floating mb-3 inputs">
+                    <input type="email" class="form-control validate-me" id="email" placeholder="Ex: nome@email.com" required>
+                    <label for="email">E-mail</label>
+                    <div class="valid-feedback">
+                        E-mail válido :D
+                    </div>
+                    <div class="invalid-feedback">
+                        E-mail inválido >:(
+                    </div>
+                </div>
+
+
+                <div class="form-floating mb-3 inputs">
+                    <input type="email" class="form-control validate-me" id="confirmacao_email" placeholder="Ex: nome@email.com" required>
+                    <label for="confirmacao_email">Confirme o e-mail</label>
+              
+                    <div class="valid-feedback">
+                        E-mails iguais :D
+                    </div>
+                    <div class="invalid-feedback">
+                        E-mails não iguais >:(
+                    </div>
+                </div>
+
+
+                <div class="form-floating mb-3 inputs">
+                    <input type="password" class="form-control validate-me" id="senha" placeholder="Digite uma senha" required>
+                    <label for="senha">Senha</label>
+             
+                    <div class="valid-feedback">
+                            Senha válida :D
+                    </div>
+                    <div class="invalid-feedback">
+                            Senha inválida >:(
+                    </div>
+            </div>
+
+
+                <div class="form-floating mb-3 inputs">
+                    <input type="password" class="form-control validate-me" id="confirmacao_senha" placeholder="Confirme a senha" required>
+                    <label for="confirmacao_senha">Confirme a senha</label>
+                    <div class="valid-feedback">
+                        Senhas iguais :D
+                    </div>
+                    <div class="invalid-feedback">
+                        Senhas não iguais >:(
+                    </div>
+                </div>
+
+
+                <div class=" inputs texto_senha ">
+                    <p class="bg-secondary-subtle  ">*A senha deve conter no minímo 8 caracteres, números, letras maiúsculas, minúsculas e pelo menos 1 caractere especial (!,@,#,%,...).
+
+                    </p>
+                </div>
+
+                <div class="row pb-5 justify-content-center inputs">
+                    <button class="w-auto py-md-3  px-md-5  btn btn-lg btn-success botao_criar_conta" type="submit">Criar conta</button>
+                </div>
+            </div>
+
+
+               
+              </form>
+            </section>
+        </div>
+    </main>
+
+
+    <footer class="container-fluid ">
+        <div class="row justify-content-center footer p-3 d-flex">
+            <div class="col order-lg-5 ">
+                <img src="./assets/petfinderLogoRodape.jpg" class="img-fluid "alt="logo Petfinder">
+            </div>
+        
+            <a  href="#" class="col link-light text-center">Ajuda </a>
+            <a href="#" class="col link-light text-center">Sobre</a>
+            <a class="d-none d-lg-block col link-light text-center aparece__1024" href="#">Apoiadores</a>
+            <p class=" d-none d-lg-block col-4 link-light text-center aparece__1024" > Desenvolvido por Gustavo Cunha </p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js" type="module"></script>
+</body>
+</html>

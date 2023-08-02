@@ -1,0 +1,17 @@
+@import url("./header.css");
+@import url("./main.css");
+@import url("./footer.css");
+
+
+:root{
+    --cor-principal:#83A15D;
+    --cor-plano-de-fundo:  #F2FFE1;
+    --cor-formulario: #D9D9D9;
+}
+
+
+body{
+    background-color: var(--cor-plano-de-fundo);
+}
+
+

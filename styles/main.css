@@ -1,0 +1,71 @@
+.crie_conta{
+    background-color: var(--cor-principal);
+}
+
+.section_form{
+    background-image: url("../assets/background.svg");
+}
+
+.estado{
+    padding-left: 5px;
+}
+.botao_criar_conta{
+    background-color: var(--cor-principal);
+    border-color: var(--cor-principal);
+    font-size: 2rem;;
+}
+.texto_senha{
+    font-size: 0.7rem;;
+}
+
+.crie_conta_desktop_div{
+    display: none;
+}
+
+@media screen and (min-width:768px){
+    .section_form{
+        background-image: url("../assets/background_tablet.svg");
+    }
+
+
+    .inputs{
+        width:40%;
+    }
+
+    .texto_senha{
+        font-size: 1rem;
+        justify-self: flex-start;
+        width: 50%;
+    }
+
+
+
+}
+
+
+@media screen and (min-width:1024px){
+    .section_form{
+        background-image: url("../assets/background_desktop.svg");
+    }
+    .crie_conta_desktop{
+        text-align: center;
+        display: block;
+        color: white;
+        background-color: var(--cor-principal);
+        font-size: 2.5rem;
+        border-radius: 28px;
+
+
+    }
+    .crie_conta_nao_desktop{
+        display: none;
+    }
+    .crie_conta_desktop_div{        display: block;}
+    .criacao_de_conta_desktop{
+        display: block;
+        background-color: var(--cor-principal);
+        padding: 1.25rem 4rem;
+        color: white;
+        margin-bottom: 4rem;
+    }
+}
